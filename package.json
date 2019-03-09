@@ -1,0 +1,27 @@
+{
+  "name": "pikachu",
+  "version": "1.0.0",
+  "description": "css 画一个皮卡丘",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "start index.html",
+    "build": "echo \"no build\"",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dogezhou/pikachu.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dogezhou/pikachu/issues"
+  },
+  "homepage": "https://github.com/dogezhou/pikachu#readme",
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
+  }
+}
