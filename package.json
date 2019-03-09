@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "start index.html",
+    "start": "concurrently \"node-sass --watch src/css/style.scss src/css/style.css \" \"start src/index.html\"",
     "build": "echo \"no build\"",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d src"
@@ -22,6 +22,8 @@
   },
   "homepage": "https://github.com/dogezhou/pikachu#readme",
   "devDependencies": {
-    "gh-pages": "^2.0.1"
+    "concurrently": "^4.1.0",
+    "gh-pages": "^2.0.1",
+    "node-sass": "^4.11.0"
   }
 }
