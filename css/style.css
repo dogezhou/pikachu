@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+*::before {
+  box-sizing: border-box; }
+
+*::after {
+  box-sizing: border-box; }
+
+* {
+  transition: all 1s; }
+
+body {
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh; }
+
+.code-wrapper {
+  flex: 1;
+  padding: 10px;
+  height: 50%; }
+  .code-wrapper #code {
+    height: 100%;
+    overflow: hidden; }
+
+.preview-wrapper {
+  flex: 1;
+  height: 50%; }
