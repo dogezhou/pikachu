@@ -1,4 +1,5 @@
 # pikachu
+[预览](https://dogezhou.github.io/pikachu/)
 
 ## develop
 ```bash
