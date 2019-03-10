@@ -2,6 +2,7 @@
     var duration = 20
     function writeCss(prefix, code, callback) {
         var container = document.querySelector('#code')
+        
         var styleTag = document.querySelector('#styleTag')
         var n = 0
         // var timer = setInterval(() => {
@@ -17,6 +18,7 @@
         setTimeout(function fn() {
             n += 1
             container.innerHTML = code.substring(0, n)
+            hljs.highlightBlock(container)
             styleTag.innerHTML = code.substring(0, n)
             container.scrollTop = container.scrollHeight
             if (n < code.length) {
@@ -30,7 +32,8 @@
     var css = `
 /*
  * 我叫 dogezhou
- * 画一个皮卡丘，首先画它的皮
+ * 今天来画一个皮卡丘，
+ * 首先画它的皮
  */
 .preview {
     height: 100%;
